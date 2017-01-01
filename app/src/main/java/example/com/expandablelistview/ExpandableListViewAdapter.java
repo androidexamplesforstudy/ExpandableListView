@@ -13,10 +13,10 @@ import android.widget.Toast;
 
 public class ExpandableListViewAdapter extends BaseExpandableListAdapter {
 
-    String [] groupNames = {"Sniadanie", "Przekąska", "Obiad", "Podwieczorek", "Kolacja"};
-    String [][] childNames = {{"Omlet", "Owoce"}, {"Paluszki", "Pomarańcza"}, {"Kurczak","Ryż"}, {"Ciasto czekoladowe"}, {"Ryba"}};
+    private String [] groupNames = {"Sniadanie", "Przekąska", "Obiad", "Podwieczorek", "Kolacja"};
+    private String [][] childNames = {{"Omlet", "Owoce"}, {"Paluszki", "Pomarańcza"}, {"Kurczak","Ryż"}, {"Ciasto czekoladowe"}, {"Ryba"}};
+    private Context context;
 
-    Context context;
 
     public ExpandableListViewAdapter(Context context) {
         this.context = context;
